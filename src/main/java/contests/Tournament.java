@@ -5,6 +5,32 @@ import java.io.PrintWriter;
 import java.util.*;
 
 
+/*
+    Given recorded games (in no particular order) between chess players (knock-out system),
+    find semifinalists if it is possible.
+
+    input:
+        7
+        GORBOVSKII ABALKIN
+        SIKORSKI KAMMERER
+        SIKORSKI GORBOVSKII
+        BYKOV IURKOVSKII
+        PRIVALOV BYKOV
+        GORBOVSKII IURKOVSKII
+        IURKOVSKII KIVRIN
+
+    output:
+        BYKOV SIKORSKI
+
+    input:
+        3
+        IVANOV PETROV
+        PETROV BOSHIROV
+        BOSHIROV IVANOV
+
+    output:
+        NO SOLUTION
+*/
 public class Tournament {
 
     static class FastReader {

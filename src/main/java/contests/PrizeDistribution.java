@@ -6,6 +6,38 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 
+/*
+    Find optimal prize fund distribution between teams so that
+    SUM( ABS( Team_i_Player_j - Prize_Team_i ) ) would be minimal.
+
+    Input format:
+        [number of teams]
+        [team_i size] [team_i player_1 earned] [team_i player_2 earned] ...
+        [team_j size] [team_j player_1 earned] [team_j player_2 earned] ...
+        [prize fund]
+
+    Output format:
+        [team_i prize] [team_j prize]
+
+    input:
+        2
+        3 5 4 1
+        3 1 2 3
+        6
+
+    output:
+        4 2
+
+
+    input:
+        2
+        1 0
+        2 0 1
+        3
+
+    output:
+        2 1
+ */
 public class PrizeDistribution {
 
     static class FastReader {

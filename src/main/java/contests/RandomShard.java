@@ -5,6 +5,33 @@ import java.io.PrintWriter;
 import java.util.*;
 
 
+/*
+    There are N shards. Each shard has weight.
+
+    Return shard i such that
+        sum of weights [shard_0, ..., shard_i] <= "weight"
+            and
+        sum of weights [shard_0, ..., shard_i, shard_i+1] > "weight".
+
+    If sum of all shard weights <= "weight", return n-1.
+    If weight of 0-th shard > "weight", return -1.
+
+    Types of queries:
+    [+ shard weight] - increase shard's weight.
+    [? weight] - return i - the number of shard satisfying the condition.
+
+    input:
+        1 5
+        + 0 2
+        + 0 1
+        + 0 3
+        ? 6
+        ? 5
+
+    output:
+        0
+        -1
+*/
 public class RandomShard {
 
     static class FastReader {
